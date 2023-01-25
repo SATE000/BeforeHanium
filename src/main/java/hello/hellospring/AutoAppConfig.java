@@ -15,9 +15,9 @@ import org.springframework.context.annotation.FilterType;
 )
 public class AutoAppConfig {
 
-    @Bean(name = "memoryMemberRepository") // 수동으로 입력한 빈을 우선으로 등록
-    MemberRepository memberRepository () {
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name = "memoryMemberRepository") // 수동으로 입력한 빈을 우선으로 등록
+//    MemberRepository memberRepository () {
+//        return new MemoryMemberRepository();
+//    }
 
 }
