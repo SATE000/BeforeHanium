@@ -1,10 +1,16 @@
 package hello.hellospring.member;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+//@Component("memberService2")
+@Component("service")
 public class MemberServiceImpl implements MemberService{
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
+    @Autowired //ac.getBean(MemberRepository.class)와 같은 역할을 한다
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
@@ -23,4 +29,5 @@ public class MemberServiceImpl implements MemberService{
     public MemberRepository getMemberRepository() {
         return memberRepository;
     }
+
 }
