@@ -2,8 +2,8 @@ package hello.hellospring.member;
 
 import hello.hellospring.AppConfig;
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class MemberServiceTest {
 
